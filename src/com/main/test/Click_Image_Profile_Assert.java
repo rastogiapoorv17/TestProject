@@ -16,7 +16,7 @@ import com.main.pages.LoginPage;
 import utilities.BaseTest;
 import utilities.CommonExcelRead;
 
-@Listeners(utilities.TestngListener.class)
+
 public class Click_Image_Profile_Assert extends BaseTest {
 	
 	

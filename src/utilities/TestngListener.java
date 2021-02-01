@@ -29,19 +29,14 @@ public class TestngListener implements ITestListener {
     public void onTestFailure(ITestResult result) {					
         // TODO Auto-generated method stub				
         System.out.println("Failed Test Case is: " + result.getName());	
-    	BaseTest bs= new BaseTest();
-        	try {
-				bs.captureScreenshot(bs.driver, result.getName());
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-    }		
+        
+    }
 
     @Override		
     public void onTestSkipped(ITestResult result) {					
         // TODO Auto-generated method stub				
-    	 System.out.println("Skipped Test Case is: " + result.getName());			
+    	 System.out.println("Skipped Test Case is: " + result.getName());
+    	 
     }		
 
     @Override		

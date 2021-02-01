@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name= "Automation Test">
-    <test name="Testcases">
-       
+<suite name="Suite">
+@Listeners(utilities.TestngListener.class)
+<listeners>
+      <listener class-name="utilities.TestngListener"/>
+</listeners>
+  <test thread-count="5" name="Test">
     <classes>
-        
-        <class name="com.main.test.SignUpTest"/>
-      <class name="com.main.test.ProfileAssertion"/>
-      <class name="com.main.test.ClicktoImageComparison"/>
+      <class name="com.main.test.Click_Image_Profile_Assert"/>
+      <class name="com.main.test.SignUpTest"/>
       <class name="com.main.test.LoginTest"/>
-       
-       
     </classes>
-    
-    </test>
-    
-</suite>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
