@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.main.pages.LoginPage;
 import com.main.pages.SignUp;
 
-import Test.BaseTest;
+import utilities.BaseTest;
 
 public class SignUpTest extends BaseTest {
 	

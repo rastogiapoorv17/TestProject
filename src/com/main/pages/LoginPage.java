@@ -8,7 +8,7 @@ public class LoginPage {
 	
 	By signUpLink = By.id("tp-signup-link");
 	By uname= By.id("username");
-	By password= By.id("password");
+	By passwordElement= By.id("password");
 	By submit= By.xpath("//div[@class='tp-submit-wrapper']/input[@name='login']");
 	
 	public LoginPage(WebDriver driver)
@@ -16,12 +16,12 @@ public class LoginPage {
 		this.driver=driver;
 	}
 	
-	public void loginField() {
-		driver.findElement(uname).sendKeys("rastogiapoorv17@gmail.com");
+	public void loginField(String login) {
+		driver.findElement(uname).sendKeys(login);
 	}
 	
-	public void passwordField() {
-		driver.findElement(password).sendKeys("Welcome123");
+	public void passwordField(String password) {
+		driver.findElement(passwordElement).sendKeys(password);
 	}
 	public void loginsubmit() {
 		driver.findElement(submit).click();
