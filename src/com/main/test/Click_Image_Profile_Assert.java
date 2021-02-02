@@ -23,7 +23,7 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		super.logger_Method("LoginTest");
 	}
 	
-	@Test(enabled=false,priority=1,dataProvider = "DataShare")
+	@Test(priority=1,dataProvider = "DataShare")
 	public void navigatetoScoll(String login, String password)
 	{
 		
@@ -64,7 +64,7 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		
 		 WebElement sp1= driver.findElement(HomePage.scroll); 
 		 hp.explicitVisible(sp1);
-		
+		 Thread.sleep(20000);
 		String current_url=driver.getCurrentUrl();
 		driver.get(current_url);
 		 
@@ -82,7 +82,7 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		hp.image_Comapre_UnInstall_Confirm();
 		String uninstall_actual_message= hp.install_message();
 		String uninstall_expected_message ="Succeeded to uninstall \"Image Comparison\" addon!";
-		Assert.assertEquals(uninstall_actual_message, uninstall_expected_message);
+		Assert.assertEquals(uninstall_actual_message, install_expected_message);
 		logger.info("UnInstalled Image Compare Addon");
 	}
 	@DataProvider(name="DataShare")
