@@ -184,3 +184,4 @@
 2021-02-02 14:59:16,991 [main] INFO LoginTest - Submitting Login Button
 2021-02-02 14:59:20,619 [main] INFO LoginTest - Successfully Login
 2021-02-02 14:59:20,621 [main] INFO LoginTest - Opening HomePage
+2021-02-02 16:46:17,390 [main] INFO LoginTest - Opening Browser
