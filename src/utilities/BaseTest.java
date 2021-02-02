@@ -41,7 +41,7 @@ public class BaseTest {
 	   logger.info("Opening Browser");
 	   System.setProperty("webdriver.chrome.driver", "C:\\MyData\\Software\\chromedriver\\chromedriver.exe");
 	   driver= new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
 	   logger.info("Maximizing Browser");
 	   driver.manage().window().maximize();
 	   logger.info("Deleting Cookies");

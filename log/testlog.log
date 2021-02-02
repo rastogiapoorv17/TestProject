@@ -185,3 +185,34 @@
 2021-02-02 14:59:20,619 - LoginTest -INFO - Successfully Login
 2021-02-02 14:59:20,621 - LoginTest -INFO - Opening HomePage
 2021-02-02 16:46:17,390 - LoginTest -INFO - Opening Browser
+2021-02-02 17:33:12,140 - LoginTest -INFO - Opening Browser
+2021-02-02 17:33:19,386 - LoginTest -INFO - Maximizing Browser
+2021-02-02 17:33:19,518 - LoginTest -INFO - Deleting Cookies
+2021-02-02 17:33:24,751 - LoginTest -INFO - Opening LoginPage
+2021-02-02 17:33:25,170 - LoginTest -INFO - Submitting Login Button
+2021-02-02 17:33:27,269 - LoginTest -INFO - Opening HomePage
+2021-02-02 17:33:47,421 - LoginTest -INFO - Opening Browser
+2021-02-02 17:33:54,236 - LoginTest -INFO - Maximizing Browser
+2021-02-02 17:33:54,402 - LoginTest -INFO - Deleting Cookies
+2021-02-02 17:33:59,957 - LoginTest -INFO - Opening LoginPage
+2021-02-02 17:34:00,379 - LoginTest -INFO - Submitting Login Button
+2021-02-02 17:34:03,000 - LoginTest -INFO - Successfully Login
+2021-02-02 17:34:03,000 - LoginTest -INFO - Opening HomePage
+2021-02-02 17:39:33,266 - LoginTest -INFO - Opening Browser
+2021-02-02 17:39:48,350 - LoginTest -INFO - Maximizing Browser
+2021-02-02 17:39:48,484 - LoginTest -INFO - Deleting Cookies
+2021-02-02 17:39:56,797 - LoginTest -INFO - Opening LoginPage
+2021-02-02 17:39:57,099 - LoginTest -INFO - Submitting Login Button
+2021-02-02 17:39:59,580 - LoginTest -INFO - Opening HomePage
+2021-02-02 17:39:59,583 - LoginTest -INFO - Hover On Profile
+2021-02-02 17:40:23,279 - LoginTest -INFO - Verifying Test Match
+2021-02-02 17:40:23,372 - LoginTest -INFO - Opening Browser
+2021-02-02 17:40:29,830 - LoginTest -INFO - Maximizing Browser
+2021-02-02 17:40:30,236 - LoginTest -INFO - Deleting Cookies
+2021-02-02 17:40:36,779 - LoginTest -INFO - Opening LoginPage
+2021-02-02 17:40:37,134 - LoginTest -INFO - Submitting Login Button
+2021-02-02 17:40:39,179 - LoginTest -INFO - Successfully Login
+2021-02-02 17:40:39,179 - LoginTest -INFO - Opening HomePage
+2021-02-02 17:41:24,010 - LoginTest -INFO - Clicking on Scroll Button
+2021-02-02 17:41:24,823 - LoginTest -INFO - Installing Image Compare Addon
+2021-02-02 17:41:27,870 - LoginTest -INFO - UnInstalling Image Compare Addon
