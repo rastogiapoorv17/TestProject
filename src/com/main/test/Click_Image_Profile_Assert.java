@@ -1,15 +1,14 @@
 package com.main.test;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
+
 //import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import com.main.pages.HomePage;
 import com.main.pages.LoginPage;
 
@@ -19,17 +18,23 @@ import utilities.CommonExcelRead;
 
 public class Click_Image_Profile_Assert extends BaseTest {
 	
+	@BeforeTest
+	public void initiate_launch() {
+		super.logger_Method("LoginTest");
+	}
 	
-	
-	@Test(priority=1,dataProvider = "DataShare")
+	@Test(enabled=false,priority=1,dataProvider = "DataShare")
 	public void navigatetoScoll(String login, String password)
 	{
-		driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
+		
+		logger.info("Opening LoginPage");
 		LoginPage lp = new LoginPage(driver);
 		lp.loginField(login);
 		lp.passwordField(password);
+		logger.info("Submitting Login Button");
 		lp.loginsubmit();
 		
+		logger.info("Opening HomePage");
 		HomePage hp = new HomePage(driver);
 		WebElement sp1= driver.findElement(HomePage.spinner);
 		super.explicitVisible(sp1);
@@ -37,35 +42,48 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		//hp.click_Element();
 		
 		String expectedText= "My Profile";
+		logger.info("Hover On Profile");
 		hp.hoverProfile();
 		String actualText= hp.myProfile();
-		
+		logger.info("Verifying Test Match");
 	org.testng.Assert.assertEquals(actualText, expectedText);
 	}
 	@Test(priority=2,dataProvider = "DataShare")
 	public void clickTest(String login, String password) throws InterruptedException, IOException
 	{
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		logger.info("Opening LoginPage");
 		LoginPage lp = new LoginPage(driver);
 		lp.loginField(login);
 		lp.passwordField(password);
+		logger.info("Submitting Login Button");
 		lp.loginsubmit();
+		logger.info("Successfully Login");
 		
-		 HomePage hp = new HomePage(driver);
-		/*
-		 * WebElement sp1= driver.findElement(HomePage.scroll); hp.explicitVisible(sp1);
-		 */
+		logger.info("Opening HomePage");
+		HomePage hp = new HomePage(driver);
 		
-		  Thread.sleep(25000); 
-		  String current_url=driver.getCurrentUrl();
-		  driver.get(current_url);
+		 WebElement sp1= driver.findElement(HomePage.scroll); 
+		 hp.explicitVisible(sp1);
+		
+		String current_url=driver.getCurrentUrl();
+		driver.get(current_url);
 		 
-		  Thread.sleep(10000); 
+		Thread.sleep(20000);
+		logger.info("Clicking on Scroll Button");
 		hp.imageComparisonScrollClick();
 		
+		logger.info("Installing Image Compare Addon");
 		hp.image_Comapre_Install();
+		String install_actual_message= hp.install_message();
+		String install_expected_message ="Succeeded to install \"Image Comparison\" addon!";
+		Assert.assertEquals(install_actual_message, install_expected_message);
+		logger.info("UnInstalling Image Compare Addon");
 		hp.image_Comapre_UnInstall();
 		hp.image_Comapre_UnInstall_Confirm();
+		String uninstall_actual_message= hp.install_message();
+		String uninstall_expected_message ="Succeeded to uninstall \"Image Comparison\" addon!";
+		Assert.assertEquals(uninstall_actual_message, uninstall_expected_message);
+		logger.info("UnInstalled Image Compare Addon");
 	}
 	@DataProvider(name="DataShare")
 	public Object[][] getData() {
@@ -83,8 +101,11 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		 
 		
 	}
-	@AfterMethod
-	public void close() {
-		driver.close();
-	}
+	
+	 @AfterMethod 
+	 public void close() 
+	 { 
+		 driver.close(); 
+		 }
+	 
 }

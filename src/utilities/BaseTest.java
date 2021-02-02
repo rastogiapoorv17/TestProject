@@ -6,7 +6,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -24,17 +27,38 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 	public  WebDriver driver;
+    protected static Logger logger;
+    
+    public static Logger logger_Method(String classname)
+	{
+		logger= Logger.getLogger(classname);
+		PropertyConfigurator.configure("Log4j.properties");
+		return logger;
+	}
 	@BeforeMethod
 	public void LaunchURL() {
+
+	   logger.info("Opening Browser");
 	   System.setProperty("webdriver.chrome.driver", "C:\\MyData\\Software\\chromedriver\\chromedriver.exe");
 	   driver= new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
+	   logger.info("Maximizing Browser");
 	   driver.manage().window().maximize();
+	   logger.info("Deleting Cookies");
 	   driver.manage().deleteAllCookies();
 	   driver.get("chrome://settings/clearBrowserData");
 	   driver.findElement(By.xpath("//settings-ui")).sendKeys(Keys.ENTER);
 	   driver.get("https://auth.testproject.io/auth/realms/TP/protocol/openid-connect/auth?client_id=tp.app&redirect_uri=https%3A%2F%2Fapp.testproject.io%2Fcallback.html&response_type=id_token%20token&scope=openid%20profile&state=ecb48b28d0a546b1be90894a0846e1a2&nonce=9a4ce0c5523d401a96fe7ae26715a568");
 		
 		
+	}
+	
+	//Generating Random Email
+	public static String email()
+	{
+		String userName = ""+(int)(Math.random()*Integer.MAX_VALUE);
+		String emailID = "User"+userName+"@example.com";
+		return emailID;
 	}
 	
 	public void explicitVisible(WebElement waitId1)
@@ -64,8 +88,6 @@ public class BaseTest {
 	}
 	
 	//Capture Screenshot
-	
-	
 
 	public String captureScreenshot(WebDriver driver2, String screenshotname) throws IOException {
 		String dateName= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());

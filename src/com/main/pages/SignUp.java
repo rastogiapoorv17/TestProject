@@ -29,9 +29,9 @@ public class SignUp {
 	{
 		driver.findElement(lname).sendKeys("Sharma");
 	}
-	public void email_Enter()
+	public void email_Enter(String mail)
 	{
-		driver.findElement(email).sendKeys("test@test.com");
+		driver.findElement(email).sendKeys(mail);
 	}
 	public void password_Enter()
 	{

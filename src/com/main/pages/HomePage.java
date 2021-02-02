@@ -1,7 +1,6 @@
 package com.main.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,10 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 import utilities.BaseTest;
 
 public class HomePage extends BaseTest {
-	
-	//WebDriver driver;
-	
-	JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	By scrolltoElements= By.xpath("//div[@title='Scroll to Element']");
 	By profile= By.id("my-profile-link");
@@ -25,6 +20,9 @@ public class HomePage extends BaseTest {
     public static By imageCompareUnInstall= By.xpath("//div[@class='addon-info-action addon-info-link ng-binding ng-scope']");
     By unInstallImageComparisonConfirm= By.xpath("//div[@class='ng-binding ng-scope ng-alert-all-buttons-epic ng-alert-right ng-alert-blue-button']");
     By closeAddOnInfo= By.xpath("//div[@class='addon-info-close-icon']");
+    By install_Message= By.xpath("//div[text()='Succeeded to install \"Image Comparison\" addon!']");
+    By uninstall_Message= By.xpath("//div[text()='Succeeded to uninstall \"Image Comparison\" addon!']");
+    
 	public HomePage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -67,5 +65,14 @@ public class HomePage extends BaseTest {
 	public void image_Comapre_UnInstall_Confirm() {
 		driver.findElement(unInstallImageComparisonConfirm).click();
 	}
-
+	public String install_message()
+	{
+		String text=driver.findElement(install_Message).getText();
+		return text;
+	}
+	public String uninstall_message()
+	{
+		String text=driver.findElement(uninstall_Message).getText();
+		return text;
+	}
 }

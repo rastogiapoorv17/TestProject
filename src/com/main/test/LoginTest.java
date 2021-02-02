@@ -1,6 +1,7 @@
 package com.main.test;
 
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,12 +12,18 @@ import utilities.CommonExcelRead;
 
 public class LoginTest extends BaseTest {
 	
+	@BeforeTest
+	public void initiate_launch() {
+		super.logger_Method("LoginTest");
+	}
 	@Test(dataProvider = "DataShare")
 	public void loginTest(String login, String password)
 	{
+		logger.info("Opening LoginPage");
 		LoginPage lp = new LoginPage(driver);
 		lp.loginField(login);
 		lp.passwordField(password);
+		logger.info("Submitting Login Button");
 		lp.loginsubmit();
 		
 	}
