@@ -27,7 +27,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.3.0</version>
-    <scope>Compile</scope>
+   <!--  <scope>Compile</scope> -->
 </dependency>
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
