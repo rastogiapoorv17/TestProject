@@ -1,52 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="131394" started-at="2021-02-04T08:55:42Z" finished-at="2021-02-04T08:57:53Z">
+  <suite name="Default suite" duration-ms="104191" started-at="2021-02-04T09:17:06Z" finished-at="2021-02-04T09:18:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="131394" started-at="2021-02-04T08:55:42Z" finished-at="2021-02-04T08:57:53Z">
+    <test name="Default test" duration-ms="104191" started-at="2021-02-04T09:17:06Z" finished-at="2021-02-04T09:18:50Z">
       <class name="com.main.test.Click_Image_Profile_Assert">
-        <test-method status="PASS" signature="initiate_launch()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="initiate_launch" is-config="true" duration-ms="386" started-at="2021-02-04T08:55:42Z" finished-at="2021-02-04T08:55:42Z">
+        <test-method status="PASS" signature="initiate_launch()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="initiate_launch" is-config="true" duration-ms="380" started-at="2021-02-04T09:17:06Z" finished-at="2021-02-04T09:17:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate_launch -->
-        <test-method status="PASS" signature="LaunchURL()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="LaunchURL" is-config="true" duration-ms="11837" started-at="2021-02-04T08:55:43Z" finished-at="2021-02-04T08:55:55Z">
+        <test-method status="PASS" signature="LaunchURL()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="LaunchURL" is-config="true" duration-ms="13667" started-at="2021-02-04T09:17:07Z" finished-at="2021-02-04T09:17:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchURL -->
-        <test-method status="PASS" signature="navigatetoScoll(java.lang.String, java.lang.String)[pri:1, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="navigatetoScoll" duration-ms="20167" started-at="2021-02-04T08:55:55Z" data-provider="DataShare" finished-at="2021-02-04T08:56:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rastogiapoorv17@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Welcome123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigatetoScoll -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="tearDown" is-config="true" duration-ms="361" started-at="2021-02-04T08:56:15Z" finished-at="2021-02-04T08:56:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=navigatetoScoll status=SUCCESS method=Click_Image_Profile_Assert.navigatetoScoll(java.lang.String, java.lang.String)[pri:1, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="LaunchURL()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="LaunchURL" is-config="true" duration-ms="10210" started-at="2021-02-04T08:56:16Z" finished-at="2021-02-04T08:56:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchURL -->
-        <test-method status="FAIL" signature="clickTest(java.lang.String, java.lang.String)[pri:2, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="clickTest" duration-ms="85749" started-at="2021-02-04T08:56:26Z" data-provider="DataShare" finished-at="2021-02-04T08:57:52Z">
+        <test-method status="FAIL" signature="clickTest(java.lang.String, java.lang.String)[pri:2, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="clickTest" duration-ms="85842" started-at="2021-02-04T09:17:21Z" data-provider="DataShare" finished-at="2021-02-04T09:18:47Z">
           <params>
             <param index="0">
               <value>
@@ -67,8 +36,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LP-5CD6518TWJ', ip: '192.168.100.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\apoorv.r\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bc7b7cf47fe0e00d734c38b53547c94a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\apoorv.r\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7db67257094e8c4ae0e678b274447141
 *** Element info: {Using=xpath, value=//div[@class='addon-info-action addon-info-btn blue ng-binding ng-scope']}]]>
             </message>
             <full-stacktrace>
@@ -78,8 +47,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LP-5CD6518TWJ', ip: '192.168.100.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\apoorv.r\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bc7b7cf47fe0e00d734c38b53547c94a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\apoorv.r\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7db67257094e8c4ae0e678b274447141
 *** Element info: {Using=xpath, value=//div[@class='addon-info-action addon-info-btn blue ng-binding ng-scope']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -128,7 +97,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="tearDown" is-config="true" duration-ms="718" started-at="2021-02-04T08:57:52Z" finished-at="2021-02-04T08:57:52Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="tearDown" is-config="true" duration-ms="2540" started-at="2021-02-04T09:18:47Z" finished-at="2021-02-04T09:18:49Z">
           <params>
             <param index="0">
               <value>
@@ -139,7 +108,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="flushReport" is-config="true" duration-ms="1025" started-at="2021-02-04T08:57:52Z" finished-at="2021-02-04T08:57:53Z">
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="flushReport" is-config="true" duration-ms="994" started-at="2021-02-04T09:18:49Z" finished-at="2021-02-04T09:18:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

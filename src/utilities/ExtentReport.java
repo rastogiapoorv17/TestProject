@@ -42,7 +42,8 @@ public class ExtentReport extends BaseTest {
 		if (result.getStatus() == ITestResult.FAILURE) {
 		test.log(Status.FAIL, "TEST CASE FAILED IS " + result.getName()); // to add name in extent report
 		test.log(Status.FAIL, "TEST CASE FAILED IS " + result.getThrowable()); // to add error/exception in extent report
-		String Screenshotpath=BaseTest.captureScreenshot(driver, result.getName());
+		BaseTest.captureScreenshot(driver, result.getName());
+		String Screenshotpath=System.getProperty("user.dir")+"/target/" +result.getName() + ".png";;
 		test.addScreenCaptureFromPath(Screenshotpath);
 		}
 		
