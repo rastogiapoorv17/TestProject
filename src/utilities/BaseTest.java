@@ -91,7 +91,7 @@ public class BaseTest {
 	//Capture Screenshot
 
 	public static String captureScreenshot(WebDriver driver, String screenshotname) throws IOException {
-		String dateName= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		//String dateName= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		 TakesScreenshot ts= (TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		 String destinationfile = System.getProperty("user.dir")+"/target/" +screenshotname + ".png";
