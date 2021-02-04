@@ -24,7 +24,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
-
 public class BaseTest {
 	public  WebDriver driver;
     protected static Logger logger;
@@ -35,6 +34,8 @@ public class BaseTest {
 		PropertyConfigurator.configure("Log4j.properties");
 		return logger;
 	}
+    
+    //Launch Browser
 	@BeforeMethod
 	public void LaunchURL() {
 
@@ -89,7 +90,7 @@ public class BaseTest {
 	
 	//Capture Screenshot
 
-	public String captureScreenshot(WebDriver driver2, String screenshotname) throws IOException {
+	public static String captureScreenshot(WebDriver driver, String screenshotname) throws IOException {
 		String dateName= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		 TakesScreenshot ts= (TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);

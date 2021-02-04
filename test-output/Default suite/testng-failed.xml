@@ -6,8 +6,10 @@
       <class name="com.main.test.Click_Image_Profile_Assert">
         <methods>
           <include name="initiate_launch"/>
+          <include name="tearDown"/>
           <include name="clickTest" invocation-numbers="0"/>
           <include name="LaunchURL"/>
+          <include name="flushReport"/>
         </methods>
       </class> <!-- com.main.test.Click_Image_Profile_Assert -->
     </classes>

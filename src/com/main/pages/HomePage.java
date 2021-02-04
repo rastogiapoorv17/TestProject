@@ -5,10 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import utilities.BaseTest;
 
-public class HomePage extends BaseTest {
-	
+public class HomePage  {
+	WebDriver driver;
 	By scrolltoElements= By.xpath("//div[@title='Scroll to Element']");
 	By profile= By.id("my-profile-link");
 	By hoverprofile= By.xpath("//div[@class='user-default-avatar ng-scope']");
