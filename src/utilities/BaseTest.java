@@ -94,7 +94,7 @@ public class BaseTest {
 		String dateName= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		 TakesScreenshot ts= (TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		 String destinationfile = "./TestAppProject/Extent_20Report/" +screenshotname + ".png";
+		 String destinationfile = System.getProperty("user.dir")+"/target/" +screenshotname + ".png";
 		 File finalDestination = new File(destinationfile);	
 		 FileHandler.copy(source, finalDestination);
 		 return destinationfile;

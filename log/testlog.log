@@ -461,3 +461,54 @@
 2021-02-04 13:33:58,030 - LoginTest -INFO - Opening HomePage
 2021-02-04 13:34:49,103 - LoginTest -INFO - Clicking on Scroll Button
 2021-02-04 13:34:49,840 - LoginTest -INFO - Installing Image Compare Addon
+2021-02-04 14:16:59,432 - LoginTest -INFO - Opening Browser
+2021-02-04 14:17:09,615 - LoginTest -INFO - Maximizing Browser
+2021-02-04 14:17:09,745 - LoginTest -INFO - Deleting Cookies
+2021-02-04 14:17:15,064 - LoginTest -INFO - Opening LoginPage
+2021-02-04 14:17:15,395 - LoginTest -INFO - Submitting Login Button
+2021-02-04 14:17:18,032 - LoginTest -INFO - Opening HomePage
+2021-02-04 14:17:18,064 - LoginTest -INFO - Hover On Profile
+2021-02-04 14:17:33,193 - LoginTest -INFO - Verifying Test Match
+2021-02-04 14:17:35,173 - LoginTest -INFO - Opening Browser
+2021-02-04 14:17:39,094 - LoginTest -INFO - Maximizing Browser
+2021-02-04 14:17:39,222 - LoginTest -INFO - Deleting Cookies
+2021-02-04 14:17:46,378 - LoginTest -INFO - Opening LoginPage
+2021-02-04 14:17:46,591 - LoginTest -INFO - Submitting Login Button
+2021-02-04 14:17:48,897 - LoginTest -INFO - Successfully Login
+2021-02-04 14:17:48,898 - LoginTest -INFO - Opening HomePage
+2021-02-04 14:18:41,897 - LoginTest -INFO - Clicking on Scroll Button
+2021-02-04 14:18:42,743 - LoginTest -INFO - Installing Image Compare Addon
+2021-02-04 14:21:45,227 - LoginTest -INFO - Opening Browser
+2021-02-04 14:21:50,153 - LoginTest -INFO - Maximizing Browser
+2021-02-04 14:21:50,275 - LoginTest -INFO - Deleting Cookies
+2021-02-04 14:21:56,002 - LoginTest -INFO - Opening LoginPage
+2021-02-04 14:21:56,251 - LoginTest -INFO - Submitting Login Button
+2021-02-04 14:21:58,720 - LoginTest -INFO - Opening HomePage
+2021-02-04 14:21:58,722 - LoginTest -INFO - Hover On Profile
+2021-02-04 14:22:12,610 - LoginTest -INFO - Verifying Test Match
+2021-02-04 14:22:14,749 - LoginTest -INFO - Opening Browser
+2021-02-04 14:22:18,542 - LoginTest -INFO - Maximizing Browser
+2021-02-04 14:22:18,666 - LoginTest -INFO - Deleting Cookies
+2021-02-04 14:22:22,475 - LoginTest -INFO - Opening LoginPage
+2021-02-04 14:22:22,802 - LoginTest -INFO - Submitting Login Button
+2021-02-04 14:22:25,118 - LoginTest -INFO - Successfully Login
+2021-02-04 14:22:25,118 - LoginTest -INFO - Opening HomePage
+2021-02-04 14:23:16,263 - LoginTest -INFO - Clicking on Scroll Button
+2021-02-04 14:23:17,058 - LoginTest -INFO - Installing Image Compare Addon
+2021-02-04 14:25:43,746 - LoginTest -INFO - Opening Browser
+2021-02-04 14:25:48,987 - LoginTest -INFO - Maximizing Browser
+2021-02-04 14:25:49,115 - LoginTest -INFO - Deleting Cookies
+2021-02-04 14:25:55,601 - LoginTest -INFO - Opening LoginPage
+2021-02-04 14:25:55,883 - LoginTest -INFO - Submitting Login Button
+2021-02-04 14:25:58,298 - LoginTest -INFO - Opening HomePage
+2021-02-04 14:25:58,300 - LoginTest -INFO - Hover On Profile
+2021-02-04 14:26:15,746 - LoginTest -INFO - Verifying Test Match
+2021-02-04 14:26:16,162 - LoginTest -INFO - Opening Browser
+2021-02-04 14:26:20,548 - LoginTest -INFO - Maximizing Browser
+2021-02-04 14:26:20,672 - LoginTest -INFO - Deleting Cookies
+2021-02-04 14:26:26,373 - LoginTest -INFO - Opening LoginPage
+2021-02-04 14:26:26,579 - LoginTest -INFO - Submitting Login Button
+2021-02-04 14:26:29,837 - LoginTest -INFO - Successfully Login
+2021-02-04 14:26:29,838 - LoginTest -INFO - Opening HomePage
+2021-02-04 14:27:20,980 - LoginTest -INFO - Clicking on Scroll Button
+2021-02-04 14:27:21,762 - LoginTest -INFO - Installing Image Compare Addon
