@@ -57,8 +57,7 @@ public class HomePage  {
 		{
 			WebElement elements= menu.get(i);
 			
-			String innerhtml=elements.getAttribute("innerHTML");
-			System.out.println(innerhtml);
+			String innerhtml=elements.getAttribute("innerHTML");			
 			if(innerhtml.contentEquals(elementName))
 			{
 				elements.click();
