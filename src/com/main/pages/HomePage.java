@@ -1,5 +1,7 @@
 package com.main.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +23,7 @@ public class HomePage  {
     By closeAddOnInfo= By.xpath("//div[@class='addon-info-close-icon']");
     By install_Message= By.xpath("//div[text()='Succeeded to install \"Image Comparison\" addon!']");
     By uninstall_Message= By.xpath("//div[text()='Succeeded to uninstall \"Image Comparison\" addon!']");
+    By list_scroll_Elements= By.xpath("//div[@class='addon-item-name tp-text-ellipsis ng-binding']");
     
 	public HomePage(WebDriver driver)
 	{
@@ -46,13 +49,25 @@ public class HomePage  {
 	{
 		driver.findElement(logout).click();
 	}
-	public void imageComparisonScrollClick() {
+	
+	public void imageComparisonScrollClick(String elementName) {
+		List<WebElement> menu=driver.findElements(list_scroll_Elements);
 		
-		for (int i=1;i<=6;i++)
+		for (int i=1;i<menu.size();i++)
 		{
-			driver.findElement(scroll).click();
+			WebElement elements= menu.get(i);
+			
+			String innerhtml=elements.getAttribute("innerHTML");
+			System.out.println(innerhtml);
+			if(innerhtml.contentEquals(elementName))
+			{
+				elements.click();
+				break;
+			} else {
+				driver.findElement(scroll).click();
+			}
 		}
-		driver.findElement(imageCompare).click();
+		
 	}
 	
 	public void image_Comapre_Install() {
