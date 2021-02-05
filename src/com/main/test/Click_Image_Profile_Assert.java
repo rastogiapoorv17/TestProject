@@ -27,7 +27,7 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		ExtentReport.ExtentReportInitiate();
 	}
 	
-	@Test(enabled = false,priority=1,dataProvider = "DataShare")
+	@Test(enabled = true,priority=1,dataProvider = "DataShare")
 	public void navigatetoScoll(String login, String password)
 	{
 		ExtentReport.createTest("My Profile Text Test");
@@ -84,13 +84,10 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		 * WebElement sp1= driver.findElement(HomePage.scroll); hp.explicitVisible(sp1);
 		 */
 		 Thread.sleep(20000);
-		/*
-		 * String current_url=driver.getCurrentUrl(); driver.get(current_url);
-		 * 
-		 * Thread.sleep(30000);
-		 */
+		String current_url=driver.getCurrentUrl(); driver.get(current_url);
+		  Thread.sleep(30000);
 		logger.info("Clicking on Scroll Button");
-		hp.imageComparisonScrollClick("\\nImage Comparison\\n");
+		hp.imageComparisonScrollClick("\nImage Comparison\n");
 		
 		logger.info("Installing Image Compare Addon");
 		hp.image_Comapre_Install();

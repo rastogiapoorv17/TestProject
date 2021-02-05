@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="121076" started-at="2021-02-05T10:19:15Z" finished-at="2021-02-05T10:21:17Z">
+  <suite name="Default suite" duration-ms="89609" started-at="2021-02-05T10:59:38Z" finished-at="2021-02-05T11:01:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="121076" started-at="2021-02-05T10:19:15Z" finished-at="2021-02-05T10:21:17Z">
+    <test name="Default test" duration-ms="89609" started-at="2021-02-05T10:59:38Z" finished-at="2021-02-05T11:01:07Z">
       <class name="com.main.test.Click_Image_Profile_Assert">
-        <test-method status="PASS" signature="initiate_launch()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@37afeb11]" name="initiate_launch" is-config="true" duration-ms="583" started-at="2021-02-05T10:19:15Z" finished-at="2021-02-05T10:19:16Z">
+        <test-method status="PASS" signature="initiate_launch()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="initiate_launch" is-config="true" duration-ms="1274" started-at="2021-02-05T10:59:38Z" finished-at="2021-02-05T10:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate_launch -->
-        <test-method status="PASS" signature="LaunchURL()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@37afeb11]" name="LaunchURL" is-config="true" duration-ms="18280" started-at="2021-02-05T10:19:18Z" finished-at="2021-02-05T10:19:36Z">
+        <test-method status="PASS" signature="LaunchURL()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="LaunchURL" is-config="true" duration-ms="20827" started-at="2021-02-05T10:59:44Z" finished-at="2021-02-05T11:00:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchURL -->
-        <test-method status="PASS" signature="clickTest(java.lang.String, java.lang.String)[pri:2, instance:com.main.test.Click_Image_Profile_Assert@37afeb11]" name="clickTest" duration-ms="90180" started-at="2021-02-05T10:19:36Z" data-provider="DataShare" finished-at="2021-02-05T10:21:06Z">
+        <test-method status="PASS" signature="clickTest(java.lang.String, java.lang.String)[pri:2, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="clickTest" duration-ms="60660" started-at="2021-02-05T11:00:04Z" data-provider="DataShare" finished-at="2021-02-05T11:01:05Z">
           <params>
             <param index="0">
               <value>
@@ -31,18 +31,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.main.test.Click_Image_Profile_Assert@37afeb11]" name="tearDown" is-config="true" duration-ms="2168" started-at="2021-02-05T10:21:09Z" finished-at="2021-02-05T10:21:11Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="tearDown" is-config="true" duration-ms="245" started-at="2021-02-05T11:01:05Z" finished-at="2021-02-05T11:01:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickTest status=SUCCESS method=Click_Image_Profile_Assert.clickTest(java.lang.String, java.lang.String)[pri:2, instance:com.main.test.Click_Image_Profile_Assert@37afeb11] output={null}]]]>
+                <![CDATA[[TestResult name=clickTest status=SUCCESS method=Click_Image_Profile_Assert.clickTest(java.lang.String, java.lang.String)[pri:2, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@37afeb11]" name="flushReport" is-config="true" duration-ms="2396" started-at="2021-02-05T10:21:14Z" finished-at="2021-02-05T10:21:17Z">
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.main.test.Click_Image_Profile_Assert@eec5a4a]" name="flushReport" is-config="true" duration-ms="2012" started-at="2021-02-05T11:01:05Z" finished-at="2021-02-05T11:01:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
