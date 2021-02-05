@@ -7,7 +7,7 @@
         <methods>
           <include name="initiate_launch"/>
           <include name="tearDown"/>
-          <include name="clickTest" invocation-numbers="0"/>
+          <include name="clickTest"/>
           <include name="LaunchURL"/>
           <include name="flushReport"/>
         </methods>

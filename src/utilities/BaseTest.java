@@ -4,8 +4,6 @@ package utilities;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -40,7 +38,7 @@ public class BaseTest {
 	public void LaunchURL() {
 
 	   logger.info("Opening Browser");
-	   System.setProperty("webdriver.chrome.driver", "C:\\MyData\\Software\\chromedriver\\chromedriver.exe");
+	   System.setProperty("webdriver.chrome.driver", "chromedriver/chromedriver.exe");
 	   driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
 	   logger.info("Maximizing Browser");
@@ -61,7 +59,7 @@ public class BaseTest {
 		String emailID = "User"+userName+"@example.com";
 		return emailID;
 	}
-	
+	//explicit wait
 	public void explicitVisible(WebElement waitId1)
 	{
 		
@@ -73,7 +71,7 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 	}
-	
+	//Readding Excel
 	@SuppressWarnings("resource")
 	public String readExcelData(String path, String sheetname, int rownum,int cellnum) throws Exception {
 		

@@ -27,7 +27,7 @@ public class Click_Image_Profile_Assert extends BaseTest {
 		ExtentReport.ExtentReportInitiate();
 	}
 	
-	@Test(enabled = true,priority=1,dataProvider = "DataShare")
+	@Test(enabled = false,priority=1,dataProvider = "DataShare")
 	public void navigatetoScoll(String login, String password)
 	{
 		ExtentReport.createTest("My Profile Text Test");

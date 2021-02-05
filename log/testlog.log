@@ -539,3 +539,36 @@
 2021-02-04 15:16:12,400 - LoginTest -INFO - Opening HomePage
 2021-02-04 15:17:03,736 - LoginTest -INFO - Clicking on Scroll Button
 2021-02-04 15:17:04,401 - LoginTest -INFO - Installing Image Compare Addon
+2021-02-05 10:54:42,416 - LoginTest -INFO - Opening Browser
+2021-02-05 10:54:58,290 - LoginTest -INFO - Maximizing Browser
+2021-02-05 10:54:58,425 - LoginTest -INFO - Deleting Cookies
+2021-02-05 10:55:04,561 - LoginTest -INFO - Opening LoginPage
+2021-02-05 10:55:04,934 - LoginTest -INFO - Submitting Login Button
+2021-02-05 10:55:07,328 - LoginTest -INFO - Successfully Login
+2021-02-05 10:55:07,329 - LoginTest -INFO - Opening HomePage
+2021-02-05 10:55:59,796 - LoginTest -INFO - Clicking on Scroll Button
+2021-02-05 11:22:27,305 - LoginTest -INFO - Opening Browser
+2021-02-05 11:22:38,904 - LoginTest -INFO - Maximizing Browser
+2021-02-05 11:22:39,060 - LoginTest -INFO - Deleting Cookies
+2021-02-05 11:22:43,462 - LoginTest -INFO - Opening LoginPage
+2021-02-05 11:22:43,859 - LoginTest -INFO - Submitting Login Button
+2021-02-05 11:22:46,202 - LoginTest -INFO - Successfully Login
+2021-02-05 11:22:46,202 - LoginTest -INFO - Opening HomePage
+2021-02-05 11:23:38,877 - LoginTest -INFO - Clicking on Scroll Button
+2021-02-05 11:25:52,886 - LoginTest -INFO - Opening Browser
+2021-02-05 11:26:02,492 - LoginTest -INFO - Maximizing Browser
+2021-02-05 11:26:02,643 - LoginTest -INFO - Deleting Cookies
+2021-02-05 11:26:06,938 - LoginTest -INFO - Opening LoginPage
+2021-02-05 11:26:07,398 - LoginTest -INFO - Submitting Login Button
+2021-02-05 11:26:09,273 - LoginTest -INFO - Successfully Login
+2021-02-05 11:26:09,275 - LoginTest -INFO - Opening HomePage
+2021-02-05 11:27:02,302 - LoginTest -INFO - Clicking on Scroll Button
+2021-02-05 11:27:02,878 - LoginTest -INFO - Installing Image Compare Addon
+2021-02-05 12:33:31,529 - LoginTest -INFO - Opening Browser
+2021-02-05 12:34:42,968 - LoginTest -INFO - Opening Browser
+2021-02-05 12:35:22,789 - LoginTest -INFO - Opening Browser
+2021-02-05 12:37:12,032 - LoginTest -INFO - Opening Browser
+2021-02-05 12:43:14,678 - LoginTest -INFO - Opening Browser
+2021-02-05 12:43:53,374 - LoginTest -INFO - Opening Browser
+2021-02-05 12:44:01,970 - LoginTest -INFO - Maximizing Browser
+2021-02-05 12:44:02,097 - LoginTest -INFO - Deleting Cookies
